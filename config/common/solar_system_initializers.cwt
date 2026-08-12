@@ -182,18 +182,16 @@ alias[planet_initializer:planet] = {
 		value_set[planet_flag]
 	}
 
-	## cardinality = 0..inf
+	## cardinality = 0..1
 	orbit_angle = random
-	## cardinality = 0..inf
+	## cardinality = 0..1
 	orbit_angle = int[-360..360]
-	## cardinality = 0..inf
+	## cardinality = 0..1
 	orbit_angle = { min = int[-360..360] max = int[-360..360] }
-	## cardinality = 0..inf
-	orbit_angle = random
 
-	## cardinality = 0..inf
+	## cardinality = 0..1
 	size = int
-	## cardinality = 0..inf
+	## cardinality = 0..1
 	size = { min = int max = int }
 
 	## cardinality = 0..1
@@ -282,16 +280,16 @@ alias[moon_initializer:moon] = {
 		value_set[planet_flag]
 	}
 
-	## cardinality = 0..inf
+	## cardinality = 0..1
 	orbit_angle = random
-	## cardinality = 0..inf
+	## cardinality = 0..1
 	orbit_angle = int[-360..360]
-	## cardinality = 0..inf
+	## cardinality = 0..1
 	orbit_angle = { min = int[-360..360] max = int[-360..360] }
 
-	## cardinality = 0..inf
+	## cardinality = 0..1
 	size = int
-	## cardinality = 0..inf
+	## cardinality = 0..1
 	size = { min = int max = int }
 
 	## cardinality = 0..1
