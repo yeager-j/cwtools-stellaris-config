@@ -37,6 +37,7 @@ solar_system_initializer = {
 	## cardinality = 0..1
 	usage_odds = float
 	## cardinality = 0..1
+	## push_scope = galactic_object
 	usage_odds = {
 		alias_name[modifier_rule] = alias_match_left[modifier_rule]
 	}
