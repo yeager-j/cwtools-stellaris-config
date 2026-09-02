@@ -114,6 +114,7 @@ enums = {
 	}
 	complex_enum[scrollbar_type] = {
 		path = "game/interface"
+		path_extension = .gui
 		name = {
 			scrollbarType = {
 				name = enum_name
@@ -122,6 +123,7 @@ enums = {
 	}
 	complex_enum[extended_scrollbar_type] = {
 		path = "game/interface"
+		path_extension = .gui
 		name = {
 			extendedScrollbarType = {
 				name = enum_name
