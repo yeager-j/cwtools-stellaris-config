@@ -595,6 +595,7 @@ enums = {
 	}
 	complex_enum[particle_force] = {
 		path = "game/gfx/particles"
+		path_extension = .asset
 		name = {
 			force = {
 				name = enum_name
