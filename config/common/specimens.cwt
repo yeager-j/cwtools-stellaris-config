@@ -15,18 +15,24 @@ types = {
 
 specimen = {
 
+	### Sprite shown for the specimen in the Grand Archive.
 	icon = <sprite>
 
+	### Grand Archive collection that contains the specimen.
 	type = enum[specimen_type]
 
+	### Rarity tier used for the specimen's display and upkeep.
 	rarity = enum[specimens_rarity]
 
+	### Whether other empires can trade the specimen. Defaults to yes when omitted.
 	## cardinality = 0..1
 	is_tradable = bool
 
+	### Whether the specimen can be sold. Defaults to yes when omitted.
 	## cardinality = 0..1
 	is_sellable = bool
 
+	### Resources produced or consumed while the specimen is exhibited.
 	## cardinality = 0..inf
 	resources = {
 		## cardinality = 0..1
@@ -34,6 +40,7 @@ specimen = {
 		alias_name[economic_template] = alias_match_left[economic_template]
 	}
 
+	### Country modifiers applied while the specimen is exhibited and their potential is true.
 	## cardinality = 0..inf
 	## replace_scopes = { this = country root = country }
 	triggered_country_modifier = single_alias_right[triggered_modifier_clause]
