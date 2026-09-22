@@ -47,6 +47,9 @@ types = {
 #TODO Confirm
 #TODO Expand to add colonizable subtype
 planet_class = {
+	### Default: yes. If no, this planet class can never become an empire's capital (automatic reassignment, the player move-capital action, and the set_capital/set_sector_capital effects all respect it)
+	## cardinality = 0..1
+	can_be_capital = bool
 	## cardinality = 0..1
 	atmosphere_color = colour[hsv]
 	## cardinality = 0..1
@@ -252,6 +255,9 @@ planet_class = {
 	### default = yes; Can be used to block all other additions of max building and district modifiers except the planet class specific ones.
 	## cardinality = 0..1
 	inherit_country_building_modifiers = bool
+	### default = yes; Can be used to block all general max district modifiers, add and mult, artificial and non artificial. The planet class specific add modifier still applies.
+	## cardinality = 0..1
+	inherit_country_district_modifiers = bool
 
 	#### Default: no. If yes, merges all build queues from the colony and carrier into a single one
 	####

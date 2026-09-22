@@ -453,7 +453,7 @@ living_standard = {
 	modifier = single_alias_right[modifier_clause]
 
 	## cardinality = 0..1
-	## replace_scopes = { this = pop_group root = pop_group }
+	## replace_scopes = { this = pop_group root = pop_group from = country }
 	pop_group_modifier = single_alias_right[modifier_clause]
 
 	## cardinality = 0..1

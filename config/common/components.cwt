@@ -105,11 +105,8 @@ component_template = {
 	## cardinality = 0..1
 	icon_frame = int
 	## cardinality = 0..1
-	prerequisites = {
-		## cardinality = 0..inf
-		<technology>
-	}
-	## cardinality = 0..1
+	prerequisites = single_alias_right[technology_prerequisites]
+    ## cardinality = 0..1
 	component_set = <component_set>
 	## cardinality = 0..1
 	hidden = bool
@@ -270,7 +267,7 @@ component_template = {
 		## cardinality = 0..1
 		static_rotation = bool #link to a GFX_ link defined under /interface
 		## cardinality = 0..1
-		planet_destruction_gfx = scalar
+		planet_destruction_gfx = <planet_killer_animation>
 		## cardinality = 0..1
 		target_weights = {
 			## cardinality = 1..inf
@@ -455,7 +452,7 @@ component_template = {
 		<scripted_action>
 	}
 
-	## replace_scopes = { this = design from = country }
+	## replace_scopes = { this = ship from = country }
 	## cardinality = 0..1
 	potential = single_alias_right[trigger_clause]
 
